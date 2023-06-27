@@ -28,11 +28,10 @@ console.log(chalk.blue.bold(`===================================================
 
 
 const printMenuPrompts = () => {
-  inquirer
-    .prompt({
+  inquirer.prompt({
       name: 'choices',
       type: 'list',
-      message: 'PLEASE SELECT A MENU OPTION...',
+      message: 'What would you like to do?',
       choices: [
         'View All Employees',
         'View All Roles',
